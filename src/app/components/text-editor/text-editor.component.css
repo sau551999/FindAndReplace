@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+  }
+
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+ 
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f8fafc;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    border-color: #4c51bf;
+    outline: none;
+  }
+  
+ 
+  input[type="text"] {
+    width: 45%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f8fafc;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4c51bf;
+    outline: none;
+  }
+  
+  
+  button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+ 
+  .bg-blue {
+    background-color: #4c51bf;
+  }
+  
+  .bg-green {
+    background-color: #38a169;
+  }
+  
+  .bg-blue:hover {
+    background-color: #5a67d8;
+  }
+  
+  .bg-green:hover {
+    background-color: #48bb78;
+  }
+  
+ 
+  p {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  textarea[readonly] {
+    background-color: #f0f4f8;
+    cursor: not-allowed;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px;
+    }
+  
+    input[type="text"], textarea {
+      font-size: 0.9rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  

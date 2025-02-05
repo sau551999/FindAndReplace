@@ -1,0 +1,22 @@
+<div class="container mx-auto p-6">
+    <h1 class="text-2xl font-bold mb-4">Find and Replace Tool</h1>
+    <textarea [(ngModel)]="text" rows="6" placeholder="Enter your text here" class="w-full p-2 border rounded"></textarea>
+  
+    <div class="my-4">
+      <label>Find: </label>
+      <input [(ngModel)]="searchWord" type="text" class="border p-2 rounded" />
+  
+      <label class="ml-4">Replace With: </label>
+      <input [(ngModel)]="replaceWord" type="text" class="border p-2 rounded" />
+    </div>
+  
+    <div class="space-x-4">
+      <button (click)="onFind()" class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">Find</button>
+      <button (click)="onReplace()" class="bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded">Replace</button>
+    </div>
+  
+    <p class="mt-4">Occurrences Found: {{ occurrenceCount }}</p>
+    <p class="mt-4">Updated Text:</p>
+    <textarea [value]="resultText" rows="6" class="w-full p-2 border rounded" readonly></textarea>
+  </div>
+  
