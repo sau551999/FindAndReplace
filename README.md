@@ -25,11 +25,15 @@ Before you begin, ensure you have the following installed on your local machine:
   node -v
   npm -v
 
-1. Clone the repository to their machine.
+1. Clone the repository to your machine from the github link https://github.com/sau551999/FindAndReplace.
 2. Install dependencies via `npm install`.
 3. Start the development server with `ng serve`.
 4. Access the application in the browser at `http://localhost:4200`.
 
 ---
 
-Let me know if you need any further adjustments!
+## Deployment
+
+This application is deployed on **Vercel**. You can access the live application at:
+
+https://find-and-replace-kappa.vercel.app/
